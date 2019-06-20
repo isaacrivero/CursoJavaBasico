@@ -11,18 +11,37 @@ public class Excepciones {
 		int valor;
 		int x;
 		try {
+			int j= 1;
+			if(j>0){
+				ChungaException e = new ChungaException();
+				throw e;
+			}
 			Integer i=null;
 			i.toString();
-		    for( x=0,valor = 100; x < 100; x ++ )
-		        valor /= x;
+		    for( x=0,valor = 100; x < 100; x ++ ){
+				valor /= x;
+			}
+
 		    }
 		catch( ArithmeticException e ) {
 		    System.out.println( "Matemáticas locas!" );
-			System.out.println(e.getStackTrace());
-			System.out.println(e.getMessage());
+			System.out.println(e.getLocalizedMessage());
+			e.printStackTrace();
 		    }
+		catch (NullPointerException e){
+			System.out.println( "Null Pinter Exception" );
+			System.out.println(e.getLocalizedMessage());
+			e.printStackTrace();
+		}
+		catch (ChungaException e){
+			System.out.println( "Null Pinter Exception" );
+			System.out.println(e.getLocalizedMessage());
+			e.printStackTrace();
+		}
 		catch( Exception e ) {
 		    System.out.println( "Se ha producido un error" );
+			e.printStackTrace();
+			System.out.println(e.getLocalizedMessage());
 		    }
 			int temp=30;
 			int dormir=7;
