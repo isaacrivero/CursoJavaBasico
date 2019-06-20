@@ -32,6 +32,12 @@ public class Excepciones {
 			System.out.println( "Null Pinter Exception" );
 			System.out.println(e.getLocalizedMessage());
 			e.printStackTrace();
+			ChungaException e2 = new ChungaException();
+			try {
+				throw e2;
+			} catch (ChungaException ex) {
+				ex.printStackTrace();
+			}
 		}
 		catch (ChungaException e){
 			System.out.println( "Null Pinter Exception" );
