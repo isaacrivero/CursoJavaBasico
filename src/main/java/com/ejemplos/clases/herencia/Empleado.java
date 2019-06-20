@@ -10,6 +10,8 @@ public class Empleado extends Persona {
         this.sueldo=0.0f;
     }
 
+
+
     public Empleado(
             String nombre,
             Integer edad,

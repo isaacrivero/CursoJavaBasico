@@ -19,6 +19,18 @@ public class Jefecillo extends Empleado {
         super(nombre, edad, puesto, sueldo);
         this.subordinados = subordinados;
     }
+    public Jefecillo(Empleado e){
+        super(e.getNombre(), e.getEdad(), e.getPuesto(), e.getSueldo());
+        this.subordinados = new Empleado[1];
+        this.subordinados[0]= e;
+
+    }
+
+    public Jefecillo(Empleado e, Empleado[] subordinados){
+        super(e.getNombre(), e.getEdad(), e.getPuesto(), e.getSueldo());
+        this.subordinados = subordinados;
+
+    }
 
     public Empleado[] getSubordinados() {
         return subordinados;

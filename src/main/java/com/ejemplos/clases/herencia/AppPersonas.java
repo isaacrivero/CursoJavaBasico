@@ -15,5 +15,13 @@ public class AppPersonas {
         p = (Persona) e;
         System.out.println(p);
         System.out.println(p.getEdad());
+
+
+        if (j instanceof Jefecillo)
+            System.out.println("Es un fejecillo");
+        if (j instanceof Empleado)
+            System.out.println("ES un empleado");
+        if (j instanceof Persona)
+            System.out.println("ES una persona");
     }
 }
