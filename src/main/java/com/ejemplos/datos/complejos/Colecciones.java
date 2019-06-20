@@ -13,6 +13,13 @@ public class Colecciones {
 			String cadena=listado.get(i);
 			System.out.println(cadena);
 		}
+		/*
+		For each de listados
+		for (String cadena: listado) {
+			System.out.println(cadena);
+		}
+
+		 */
 	}
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
@@ -50,7 +57,7 @@ public class Colecciones {
 		int count[] = {34, 22,10,60,30,22};
 		Set<Integer> set = new HashSet<Integer>();
 		try{
-			for(int i = 0; i<5; i++){
+			for(int i = 0; i<6; i++){
 				set.add(count[i]);
 			}
 			System.out.println(set);
